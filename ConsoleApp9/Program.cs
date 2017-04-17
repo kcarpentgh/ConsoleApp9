@@ -28,7 +28,7 @@ namespace Calculator
                 stringinput2 = Console.ReadLine();
                 intinput2 = Convert.ToInt32(stringinput2);
 
-                Console.WriteLine("Please input the desired math operation.");
+                Console.WriteLine("Please input the desired math operation. Type 'exit' to exit.");
                 operatorinput = Console.ReadLine();
 
                 switch (operatorinput)
@@ -58,7 +58,10 @@ namespace Calculator
                         break;
 
                 }
-
+                if (operatorinput == "exit")
+                {
+                    Console.WriteLine("Have a nice day.");
+                }
                 Console.ReadKey();
             }
         }
